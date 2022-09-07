@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">G2C</string>
+    <string name="check_list">Check-List</string>
+    <string name="label_delete_check_list_item">Delete</string>
+    <string name="add_check_item">Add Check Item</string>
+    <string name="check_item">Check Item</string>
+    <string name="full_servicing">Full servicing</string>
+    <string name="_2k_rating">(2K+ rating)</string>
+    <string name="time_duration">• 90-120 min</string>
+    <string name="servicing_checklist">Servicing Checklist</string>
+    <string name="services">✅ Air filter cleaning\n✅ Spark plug cleaning\n✅Break shoe/pad rubbing\n✅Front back drum rubbing\n✅Chain and sprooket adjustment\n✅Clutch cable freeplay\n✅Engine Oil check\n✅Front and rear wheel axle greasing</string>
+    <string name="heading_customer_say">What customer say about us</string>
+    <string name="which_engine_oil_do_you_use">Which engine oil do you use? \t⋁</string>
+    <string name="second_ques">Are there any additional charges other than mentioned \t⋁</string>
+</resources>

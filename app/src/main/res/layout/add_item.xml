@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_margin="10dp">
+
+    <EditText
+        android:id="@+id/et_check_list_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/check_item"
+        android:inputType="text"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:textColorHint="#535151" />
+
+    <Button
+        android:id="@+id/btn_add_check_list_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:textAllCaps="false"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:backgroundTint="@color/black"
+        android:text="@string/add_check_item"/>
+
+</LinearLayout>

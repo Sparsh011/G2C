@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:expandableTextView="http://schemas.android.com/apk/res-auto"
+    tools:context=".activities.BookingDetailActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintVertical_chainStyle="spread_inside">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:id="@+id/cl_first"
+                app:layout_constraintStart_toStartOf="parent"
+                android:background="#DBF1FA">
+
+                <ImageView
+                    android:id="@+id/img_g2c"
+                    android:layout_width="match_parent"
+                    android:layout_height="235dp"
+                    android:src="@drawable/g2c"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_full_servicing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/full_servicing"
+                    app:layout_constraintTop_toBottomOf="@+id/img_g2c"
+                    android:textSize="17sp"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="10dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:id="@+id/rating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="★ 4.8"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_full_servicing"
+                    android:textColor="#FFC107"
+                    android:layout_marginStart="10dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:id="@+id/number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_2k_rating"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_full_servicing"
+                    android:layout_marginStart="10dp"
+                    android:textColor="@color/black"
+                    app:layout_constraintLeft_toRightOf="@id/rating"
+                    />
+                <TextView
+                    android:id="@+id/tv_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/time_duration"
+                    app:layout_constraintTop_toBottomOf="@+id/rating"
+                    android:layout_marginStart="10dp"
+                    android:textColor="@color/black"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    />
+
+                <TextView
+                    android:id="@+id/rate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="₹ 359"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_time"
+                    android:textSize="17sp"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="10dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:textStyle="bold"
+                    />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Book"
+                    android:textAllCaps="false"
+                    app:layout_constraintHorizontal_bias="0.891"
+                    app:layout_constraintLeft_toRightOf="@+id/rating"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/rating" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/cl_first"
+                android:background="#DBF1FA"
+                android:id="@+id/cl_second"
+                android:layout_marginTop="10dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                >
+                <TextView
+                    android:id="@+id/servicing_checklist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/servicing_checklist"
+                    android:textSize="17sp"
+                    android:padding="8dp"
+                    android:layout_marginStart="5dp"
+                    android:background="#4CAF50"
+                    android:textColor="@color/white"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"/>
+
+                <TextView
+                    android:id="@+id/services"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/services"
+                    app:layout_constraintTop_toBottomOf="@+id/servicing_checklist"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:textColor="@color/black"
+                    />
+
+                <TextView
+                    android:id="@+id/see_all_items"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="See full servicing checklist"
+                    android:textSize="14sp"
+                    android:padding="4dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="8dp"
+                    android:background="#4CAF50"
+                    android:textColor="@color/white"
+                    app:layout_constraintTop_toBottomOf="@+id/services"
+                    app:layout_constraintLeft_toLeftOf="parent"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_third"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/cl_second"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_margin="20dp"
+                >
+
+                <TextView
+                    android:id="@+id/review_heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:text="@string/heading_customer_say"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/review"
+                    app:layout_constraintTop_toBottomOf="@+id/review_heading"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:padding="10dp"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cl_third">
+
+                <TextView
+                    android:id="@+id/heading_faq"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Frequently asked questions"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    android:layout_margin="20dp"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/first_ques"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/which_engine_oil_do_you_use"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="24dp"
+                    android:padding="10dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/heading_faq" />
+
+                <TextView
+                    android:id="@+id/second_ques"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/second_ques"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="24dp"
+                    android:padding="10dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/first_ques" />
+
+                <TextView
+                    android:id="@+id/third_ques"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/which_engine_oil_do_you_use"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="24dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/second_ques" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
